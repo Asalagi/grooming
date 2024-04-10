@@ -3,6 +3,30 @@
   background-color: #8cbd9c;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border: 1px solid #000000;
+}
+
+
+.paw-logo {
+  height: 140px;
+  width: 140px;
+}
+
+.menu-container {
+  display: flex;
+  border: 0px solid #000000;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  border: 0px solid #000000;
+}
+
 .menu-toggle {
   display: none;
 }
@@ -11,7 +35,6 @@
 .menu-toggle {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   width: 75px;
   height: 20px;
   cursor: pointer;
@@ -31,15 +54,14 @@
 .menu {
   display: none;
   background-color: #fff; 
-  padding: 10px;
-  width: 200px;
+  padding: 0px;
+  width: 150px;
 }
 
 .menu.active {
   display: flex;
   flex-direction: column; 
-  position: absolute; 
-  top: 25px;
+  position: relative; 
   left: 0;
 }
 
@@ -50,13 +72,25 @@
 }
 
 .menu li {
-  padding: 5px 0;
-  background-color: #fff; 
+  padding: 0px 0;
 }
 
 .menu li a {
-  background-color: #fff; 
   text-decoration: none;
   color: #000000;
+}
+
+.link-btn {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  text-align: left;
+  background-color: #fff;
+  border: 0px solid black;
+  width: 150px;
+  padding-left: 10px;
+}
+.link-btn:hover{
+  background-color: #6c9d7c;
+  color: #fff;
 }
 }
