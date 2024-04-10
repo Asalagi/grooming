@@ -10,9 +10,7 @@ function Main() {
 
     return (
         <div className={`menu-toggle ${open ? 'active' : ''}`} onClick={toggleMenu}>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
+            <div className="menu-text">☰ Menu</div>
             <nav className={`menu ${open ? 'active' : ''}`}>
                 <ul>
                     <li><a href="#">Link One</a></li>
