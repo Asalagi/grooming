@@ -37,6 +37,10 @@ function Main() {
                 </nav>
             </div>
             </div>
+            <div className="main-content">
+
+            </div>
+            <div className="footer">Here is a lovely little footer</div>
         </div>
     );
 };
