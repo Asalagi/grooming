@@ -13,7 +13,15 @@ function Main() {
         <div className="main">
             <div className="logo-container">
                 <img src={pawLogo} alt="logo" className="paw-logo" />
-            </div>            
+            </div>     
+            <div className="main-menu">
+                <button className="link-btn">Link One</button>
+                <button className="link-btn">Link Two</button>
+                <button className="link-btn">Link Three</button>
+                <button className="link-btn">Link Four</button>
+                <button className="link-btn">Link Five</button>
+                <button className="link-btn">Link Six</button>
+            </div>       
             <div className="menu-container">
             <div className={`menu-toggle ${open ? 'active' : ''}`} onClick={toggleMenu}>
                 <div className="menu-text">☰ Menu</div>
@@ -23,6 +31,8 @@ function Main() {
                         <li><a href="#"><button className="link-btn">Link Two</button></a></li>
                         <li><a href="#"><button className="link-btn">Link Three</button></a></li>
                         <li><a href="#"><button className="link-btn">Link Four</button></a></li>
+                        <li><a href="#"><button className="link-btn">Link Five</button></a></li>
+                        <li><a href="#"><button className="link-btn">Link Six</button></a></li>
                     </ul>
                 </nav>
             </div>
