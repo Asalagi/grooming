@@ -75,6 +75,15 @@
   border: 0px solid #000000;
 }
 
+.content-holder {
+  display: flex;
+  background-color: #fff;
+  margin: 5px;
+  height: 95%;
+  border: 0px solid black;
+  font-size: .85rem;
+}
+
 .menu-toggle {
   display: none;
 }

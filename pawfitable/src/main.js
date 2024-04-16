@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './styling.css';
 import pawLogo from './pawlogo.png';
+import Content from './content';
 
 function Main() {
     const [open, setOpen] = useState(false);
@@ -38,7 +39,7 @@ function Main() {
             </div>
             </div>
             <div className="main-content">
-
+                <Content/>
             </div>
             <div className="footer">Here is a lovely little footer</div>
         </div>
