@@ -10,13 +10,29 @@ function Main() {
         setOpen(!open);
     };
 
+    const [isPromptOpen, setIsPromptOpen] = useState(false); // usestate sets if prompt is up on not
+
+    const openPrompt = () => {
+        setIsPromptOpen(true);
+    }; // add function to open prompt
+
+    const closePrompt = () => {
+        setIsPromptOpen(false);
+    }; // add function to close prompt
+
+    const handleClicked = (e) => {
+        if (e.target.id === 'id100') {
+            closePrompt();
+        } // add handler to have prompt open or close
+    };
+
     return (
         <div className="main">
             <div className="logo-container">
                 <img src={pawLogo} alt="logo" className="paw-logo" />
             </div>     
             <div className="main-menu">
-                <button className="link-btn">Link One</button>
+                <button className="link-btn" onClick={openPrompt}>Log In</button>
                 <button className="link-btn">Link Two</button>
                 <button className="link-btn">Link Three</button>
                 <button className="link-btn">Link Four</button>
@@ -42,6 +58,18 @@ function Main() {
                 <Content/>
             </div>
             <div className="footer">Here is a lovely little footer</div>
+
+            {isPromptOpen && (
+                <div id="id100" className="prompt" onClick={handleClicked}>
+                    <div className="prompt-content">
+                        <div className="title">Log In</div>
+                        <div className="input-container">
+                            <input type="text" placeholder="UserName" name="user" required /><br/>
+                            <input type="password" placeholder="Password" name="pass" required />
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

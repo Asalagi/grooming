@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import pawlogo from './pawlogo.png';
-import './login.css';
+// import './login.css';
 
 function LogIn() {
     const [isPromptOpen, setIsPromptOpen] = useState(true); // usestate sets if prompt is up on not
