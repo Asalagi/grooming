@@ -3,7 +3,7 @@ import pawlogo from './pawlogo.png';
 import './login.css';
 
 function LogIn() {
-    const [isPromptOpen, setIsPromptOpen] = useState(false); // usestate sets if prompt is up on not
+    const [isPromptOpen, setIsPromptOpen] = useState(true); // usestate sets if prompt is up on not
 
     const openPrompt = () => {
         setIsPromptOpen(true);
