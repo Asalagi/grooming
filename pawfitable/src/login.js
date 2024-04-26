@@ -53,7 +53,7 @@ function LogIn() {
                         </div>
 
                         <div className="log-container" style={{ backgroundColor: '#f1f1f1' }}>
-                            <button className="log-button" type="button" onClick={closePrompt} className="cancel">
+                            <button className="log-button cancel" type="button" onClick={closePrompt}>
                                 Cancel
                             </button>
                             <span className="pass">
