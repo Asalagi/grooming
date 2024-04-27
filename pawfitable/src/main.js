@@ -64,8 +64,14 @@ function Main() {
                     <div className="prompt-content">
                         <div className="title">Log In</div>
                         <div className="input-container">
-                            <input type="text" placeholder="UserName" name="user" required /><br/>
+                            <label>UserName</label>
+                            <input type="text" placeholder="UserName" name="user" required />
+                            <label>Password</label>
                             <input type="password" placeholder="Password" name="pass" required />
+                        </div>
+                        <div className="btn-container">
+                            <button className="login-btn">Log In</button>
+                            <button className="cancel-btn" onClick={closePrompt}>Cancel</button>
                         </div>
                     </div>
                 </div>

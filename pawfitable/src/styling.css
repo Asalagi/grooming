@@ -52,6 +52,28 @@ input {
   box-sizing: border-box;
 }
 
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+  width: 80%;
+}
+.login-btn {
+  width: 40%;
+  padding: 12px;
+  background-color: #6c9d7c;
+  border: 0px solid #ccc;
+}
+.cancel-btn {
+  width: 40%;
+  padding: 12px;
+  background-color: #8f3131;
+  border: 0px solid #ccc;
+}
+.login-btn:hover, .cancel-btn:hover {
+  opacity: 0.8;
+}
+
 /* main layout*/
 .main {
   display: flex;
