@@ -1,9 +1,7 @@
-import { useState } from 'react';
 import './styling.css';
-import pawLogo from './pawlogo.png';
-import Content from './content';
+import { useState } from 'react';
 
-function Main() {
+function NavBar() {
     const [open, setOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -27,38 +25,30 @@ function Main() {
     };
 
     return (
-        <div className="main">
-            <div className="logo-container">
-                <img src={pawLogo} alt="logo" className="paw-logo" />
-            </div>     
+        <div className="div-section">
             <div className="main-menu">
                 <button className="link-btn" onClick={openPrompt}>Log In</button>
                 <button className="link-btn">Clients</button>
                 <button className="link-btn">Link Four</button>
                 <button className="link-btn">Link Five</button>
                 <button className="link-btn">Link Six</button>
-            </div>       
-            <div className="menu-container">
-            <div className={`menu-toggle ${open ? 'active' : ''}`} onClick={toggleMenu}>
-                <div className="menu-text">☰ Menu</div>
-                <nav className={`menu ${open ? 'active' : ''}`}>
-                    <ul>
-                        <li><a href="#"><button className="link-btn">Link One</button></a></li>
-                        <li><a href="#"><button className="link-btn">Link Two</button></a></li>
-                        <li><a href="#"><button className="link-btn">Link Three</button></a></li>
-                        <li><a href="#"><button className="link-btn">Link Four</button></a></li>
-                        <li><a href="#"><button className="link-btn">Link Five</button></a></li>
-                        <li><a href="#"><button className="link-btn">Link Six</button></a></li>
-                    </ul>
-                </nav>
-            </div>
-            </div>
-            <div className="main-content">
-                <Content />
-            </div>
-            <div className="footer">Here is a lovely little footer</div>
-
-            {isPromptOpen && (
+            </div>  
+                    <div className="menu-container">
+                    <div className={`menu-toggle ${open ? 'active' : ''}`} onClick={toggleMenu}>
+                        <div className="menu-text">☰ Menu</div>
+                        <nav className={`menu ${open ? 'active' : ''}`}>
+                            <ul>
+                                <li><a href="#"><button className="link-btn">Link One</button></a></li>
+                                <li><a href="#"><button className="link-btn">Link Two</button></a></li>
+                                <li><a href="#"><button className="link-btn">Link Three</button></a></li>
+                                <li><a href="#"><button className="link-btn">Link Four</button></a></li>
+                                <li><a href="#"><button className="link-btn">Link Five</button></a></li>
+                                <li><a href="#"><button className="link-btn">Link Six</button></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                {isPromptOpen && (
                 <div id="id100" className="prompt" onClick={handleClicked}>
                     <div className="prompt-content">
                         <div className="title">Log In</div>
@@ -76,7 +66,7 @@ function Main() {
                 </div>
             )}
         </div>
-    );
-};
+    )
+}
 
-export default Main;
+export default NavBar;
