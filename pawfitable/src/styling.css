@@ -123,9 +123,19 @@ input {
   display: flex;
   margin-top: 15px;
   width: 95%;
-  height: 75%;
+  min-height: 75%;
+  overflow-y: auto;
   background-color: #fff;
   border: 1px solid #000000;
+}
+
+.main-content::-webkit-scrollbar{
+  width: 15px;
+  background: #4d4d4d;
+}
+.main-content::-webkit-scrollbar-thumb {
+  background: #fff;
+  border: 1px solid #4d4d4d;
 }
 
 .link-btn {

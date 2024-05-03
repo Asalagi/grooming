@@ -2,6 +2,7 @@ import './styling.css';
 import NavBar from './nav-bar';
 import pawLogo from './pawlogo.png';
 import Home from './home';
+import Footer from './footer';
 
 function TestIt(){
     return (
@@ -15,6 +16,9 @@ function TestIt(){
             <div className="main-content">
                 <Home />
             </div> 
+            <div>
+                <Footer />
+            </div>
         </div>
     )
 }

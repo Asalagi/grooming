@@ -38,7 +38,7 @@ function NavBar() {
                         <div className="menu-text">☰ Menu</div>
                         <nav className={`menu ${open ? 'active' : ''}`}>
                             <ul>
-                                <li><a href="#"><button className="link-btn">Link One</button></a></li>
+                                <li><button className="link-btn" onClick={openPrompt}>Log In</button></li>
                                 <li><a href="#"><button className="link-btn">Link Two</button></a></li>
                                 <li><a href="#"><button className="link-btn">Link Three</button></a></li>
                                 <li><a href="#"><button className="link-btn">Link Four</button></a></li>
